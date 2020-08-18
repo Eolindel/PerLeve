@@ -154,6 +154,11 @@ for i in listSemaine:
 				textPair += str(triplette[0])+','+triplette[1][0]+','+triplette[1][1]+"\n"
 				if sortieLatex ==  True:
 					textPairLatex += '\cellcolor{pair}' + str(triplette[0])+' & \cellcolor{pair}'+triplette[1][0]+' & \cellcolor{pair}'+triplette[1][1]+r'\\ \hline'+"\n"
+		else:
+			textImpair += str(triplette[0])+','+triplette[1][0]+','+triplette[1][1]+"\n"
+			if sortieLatex ==  True:
+				textImpairLatex += '\cellcolor{impair}' + str(triplette[0])+' & \cellcolor{impair}'+triplette[1][0]+' & \cellcolor{impair}'+triplette[1][1]+r'\\ \hline'+"\n"
+			
 	output.write(textImpair)
 	output.write(textPair)
 	output.write("\n\n")
