@@ -79,41 +79,17 @@ output = open(fichierSortie + '.csv','w')
 if sortieLatex == True:
 	outputLatex = open(fichierSortie +'.tex','w')
 	outputLatex.write(r"""\documentclass[twoside,a4paper,12pt]{article}
-\title{Liste Binômes}
-\date{}
+\usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage{amsmath}
+\title{Liste Binômes}
+\author{}
+\date{}
+\usepackage{xcolor}
 \usepackage{array}
 \usepackage[utf8]{inputenc}
 \usepackage[top=20mm,bottom=20mm,left=20mm, right=20mm]{geometry}
-\usepackage{pdfpages}
 \usepackage[justification=centering]{caption}
-\usepackage{verbatim}
 \usepackage{multicol}
-\usepackage{float}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{subfigure}
-\usepackage{verbatim} 
-\usepackage{mathrsfs}
-\usepackage{textcomp}
-\usepackage{cancel}
-\usepackage{amssymb}
-\usepackage{tabularx}
-\usepackage{hyperref}
-\hypersetup{
-	pdfauthor={},
-	pdfkeywords={},
-    colorlinks,%
-    citecolor=blue,%
-    filecolor=blue,%
-    linkcolor=blue,%
-    urlcolor=blue
-}
-\usepackage{hypcap}
-\usepackage{booktabs}
-\author{}
-\date{}
 \usepackage{mathpazo}
 \usepackage{colortbl}
 \definecolor{title}{HTML}{e7d9eb}
